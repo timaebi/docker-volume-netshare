@@ -89,7 +89,7 @@ func (v volumeDriver) Capabilities(r volume.Request) volume.Response {
 	log.Debugf("Entering Capabilities: %v", r)
 	return volume.Response{
 		Capabilities: volume.Capability{
-			Scope: "local",
+			Scope: "global",
 		},
 	}
 }
